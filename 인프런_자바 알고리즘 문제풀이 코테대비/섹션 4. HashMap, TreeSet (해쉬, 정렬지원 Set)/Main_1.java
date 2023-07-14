@@ -10,6 +10,7 @@ public class Main_1 {
 			map.put(x, map.getOrDefault(x, 0) + 1); // getOrDefault : x라는 key가 없으면 0을 return
 		}
 
+		
 		int max = Integer.MIN_VALUE;
 		for(char key : map.keySet()) {
 			if(map.get(key) > max ) {

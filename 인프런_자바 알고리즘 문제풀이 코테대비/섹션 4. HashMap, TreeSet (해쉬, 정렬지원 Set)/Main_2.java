@@ -34,3 +34,4 @@ public class Main_2 {
     	System.out.println(T.solution(str1, str2));
     }
 }
+
