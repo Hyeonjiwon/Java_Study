@@ -13,17 +13,17 @@ public class Baekjoon_2309 {
 
             for(int i=0; i<n; i++) {
                 if(visited[i]) {
-                    System.out.print(arr[i] + " ");
+                    // System.out.print(arr[i] + " ");
 
                     answer += arr[i];
                     comb[i] = arr[i];
                 }
             }
-            if(answer < 100) {
+            if(answer == 100) { // 난쟁이 키 합이 100인 경우
                 combinationList.add(comb);
             }
 
-            System.out.println();
+            // System.out.println();
             return;
         }
 
@@ -48,17 +48,17 @@ public class Baekjoon_2309 {
             arrHeight[i] = Integer.parseInt(height);
         }
 
-        System.out.println();
+        // System.out.println();
 
         // 7 8 10 13 15 19 20 23 25   여기서 7개만 뽑기 
         // 9C7 조합으로 모든 경우를 구해서 100 이하인 배열들만 list에 담기  
         // 타임아웃 에러가 안날까 ... ?  9 * 8 / 2 * 1 = 36 
         // 백트레킹 
         
-        System.out.println("\n" + n + " 개 중에서 " + r + " 개 뽑기");
+        // System.out.println("\n" + n + " 개 중에서 " + r + " 개 뽑기");
         combination(arrHeight, visited, 0, n, r);
 
-        System.out.println();
+        // System.out.println();
 
         int[] answer = combinationList.get(0);
         Arrays.sort(answer);
