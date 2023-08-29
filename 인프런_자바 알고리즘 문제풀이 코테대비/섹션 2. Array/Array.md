@@ -269,3 +269,47 @@ public static void main(String[] args) throws Exception {
 	System.out.println(T.solution(n, s));
 }
 ```
+
+<br>
+--
+<br>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public int[] solution(int n, String s) {
+
+        String[] strNum = s.split(" ");
+        int[] answer = new int[n];
+
+        for(int i = 0; i < n; i++) {
+            answer[i] = 1;
+        }
+
+        for(int i = 0; i < n; i++) {
+            int num1 = Integer.valueOf(strNum[i]);
+            for(int j = 0; j < n; j++) {
+                int num2 = Integer.valueOf(strNum[j]);
+                if(i!=j && num1 < num2) {
+                    answer[i]++;
+                }
+            }
+        }
+
+        return answer;
+    }
+
+    public static void main(String[] args) throws Exception {
+        Main T = new Main();
+        Scanner kb = new Scanner(System.in);
+
+        int n = Integer.valueOf(kb.nextLine());
+        String s = kb.nextLine();
+
+        for(int i : T.solution(n, s)) {
+            System.out.print(i + " ");
+        }
+    }
+}
+```
