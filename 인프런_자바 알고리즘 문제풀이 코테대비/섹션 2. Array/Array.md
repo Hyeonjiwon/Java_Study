@@ -231,3 +231,41 @@ public class Main {
 **풀이**
 ```java
 ```
+
+<br>
+--
+<br>
+
+7. 점수계산
+
+**풀이**
+```java
+public int solution(int n, String s) {
+	int answer = 0;
+	String[] strNum = s.split(" ");
+
+	int weight = 0;
+	for(int i=0; i<strNum.length; i++) {
+		int num = Integer.valueOf(strNum[i]);
+
+		if(num == 0) {
+			weight = 0;
+		} else {
+			weight++;
+			answer += weight;
+		}
+	}
+
+	return answer;
+}
+
+public static void main(String[] args) throws Exception {
+	Main T = new Main();
+	Scanner kb = new Scanner(System.in);
+
+	int n = Integer.valueOf(kb.nextLine());
+	String s = kb.nextLine();
+
+	System.out.println(T.solution(n, s));
+}
+```
