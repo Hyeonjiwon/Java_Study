@@ -274,6 +274,10 @@ public static void main(String[] args) throws Exception {
 --
 <br>
 
+8. 등수 구하기
+   
+**풀이**
+
 ```java
 import java.util.Scanner;
 
