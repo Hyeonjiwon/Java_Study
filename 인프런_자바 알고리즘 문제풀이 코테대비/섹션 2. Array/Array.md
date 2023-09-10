@@ -441,6 +441,56 @@ public class Main {
 --
 <br>
 
+11. 임시반장 정하기
+
+**풀이**
+
+```java
+    public static int solution(int n, int[][] arr) {
+        int answer = 0;
+
+        int max = 0;
+        for(int i=1; i<n+1; i++) {
+            int cnt = 0;
+            for(int j=1; j<n+1; j++) {
+                for(int k=1; k<=5; k++) {
+                    if(arr[i][k] == arr[j][k]){
+                        cnt++;
+                        break;
+                    }
+                }
+            }
+
+            if(max < cnt) {
+                max = cnt;
+                answer = i;
+            }
+        }
+
+        return answer;
+    }
+
+    public static void main(String[] args) throws Exception {
+        Main T = new Main();
+        Scanner kb = new Scanner(System.in);
+
+        int n = kb.nextInt();
+        int[][] arr = new int[n+1][6];
+
+        for(int i=1; i<=n; i++) {
+            for(int j=1; j<=5; j++) {
+                arr[i][j] = kb.nextInt();
+            }
+         }
+
+        System.out.println(solution(n, arr));
+    }
+```
+
+<br>
+--
+<br>
+
 .
 
 **풀이**
@@ -448,3 +498,26 @@ public class Main {
 ```java
 
 ```
+<br>
+--
+<br>
+
+.
+
+**풀이**
+
+```java
+
+```
+<br>
+--
+<br>
+
+.
+
+**풀이**
+
+```java
+
+```
+
