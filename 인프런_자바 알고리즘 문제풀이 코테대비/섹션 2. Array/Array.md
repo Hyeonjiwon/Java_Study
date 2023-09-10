@@ -317,3 +317,134 @@ public class Main {
     }
 }
 ```
+
+<br>
+--
+<br>
+
+9. 격자판 최대합
+   
+**풀이**
+
+```java
+import java.util.Scanner;
+  
+public class Main {
+	public int solution(int n, int[][] arr) {
+    	int answer = 0;
+    	
+    	int colMax = 0; 
+    	int rowMax = 0;
+    	int crossMax = 0;
+		int crossTotal1 = 0, crossTotal2 = 0;
+		
+    	for(int i=0; i<n; i++) {
+    		int rowTotal = 0; 
+    		int colTotal = 0;
+    		for(int j=0; j<n; j++) {
+    			rowTotal += arr[i][j];
+    			colTotal += arr[j][i];
+    		}
+    		
+    		crossTotal1 += arr[i][i];
+    		crossTotal2 += arr[i][n-i-1];
+    		
+			rowMax = Math.max(rowMax, rowTotal);
+			colMax = Math.max(colMax, colTotal);
+			crossMax = Math.max(crossTotal1, crossTotal2);
+    	}
+    	
+    	answer = Math.max(Math.max(rowMax, colMax), crossMax);
+    	
+    	return answer;
+    }
+
+    public static void main(String[] args) throws Exception {
+    	Main T = new Main();
+    	Scanner kb = new Scanner(System.in);
+    	
+    	int n = kb.nextInt();
+    	int[][] arr = new int[n][n];
+    	for(int i=0; i<n; i++) {
+    		for(int j=0; j<n; j++) {
+    			arr[i][j] = kb.nextInt();
+    		}
+    	}
+    	
+    	System.out.println(T.solution(n, arr));
+    }
+}
+```
+
+
+<br>
+--
+<br>
+
+10. 봉우리
+
+**풀이**
+
+```java
+import java.util.Scanner;
+  
+public class Main {
+	public int solution(int n, int[][] arr) {
+    	int answer = 0;
+    	int[] dx = {-1, 0, 1, 0};
+    	int[] dy = {0, 1, 0, -1};
+    	
+    	for(int i=1; i<n+1; i++) {
+    		for(int j=1; j<n+1; j++) {
+    			boolean isPeaks = true; 
+    			
+    			for(int k=0; k<4; k++) {
+    				int nx = i + dx[k];
+    				int ny = j + dy[k];
+    				
+    				int a = arr[i][j];
+    				int b = arr[nx][ny];
+    				
+    				if(a <= b) {
+    					isPeaks = false;
+    					break;
+    				}
+    			}
+    			
+    			if(isPeaks){
+    				answer++;
+    			}
+    		}
+    	}
+    	
+    	return answer;
+    }
+
+    public static void main(String[] args) throws Exception {
+    	Main T = new Main();
+    	Scanner kb = new Scanner(System.in);
+    	
+    	int n = kb.nextInt();
+    	int[][] arr = new int[n+2][n+2];
+    	for(int i=1; i<=n; i++) {
+    		for(int j=1; j<=n; j++) {
+    			arr[i][j] = kb.nextInt();
+    		}
+    	}
+    	
+    	System.out.println(T.solution(n, arr));
+    }
+```
+
+
+<br>
+--
+<br>
+
+.
+
+**풀이**
+
+```java
+
+```
