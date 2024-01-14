@@ -1,7 +1,7 @@
-```java
+/* 5.4. 후위식연산 */
 import java.util.*;
 
-public class Main {
+public class Main04 {
     public int solution(String str) {
         int answer = 0;
         Stack<Integer> stack = new Stack<>();
@@ -50,4 +50,3 @@ public class Main {
         System.out.println(T.solution(str));
     }
 }
-```

@@ -1,7 +1,7 @@
-```java
+/* 5.1. 올바른 괄호 */
 import java.util.*;
 
-public class Main {
+public class Main01 {
     public String solution(String str) {
         String answer = "YES";
         Stack<Character> stack = new Stack<>();
@@ -27,4 +27,3 @@ public class Main {
         System.out.println(T.solution(str));
     }
 }
-```

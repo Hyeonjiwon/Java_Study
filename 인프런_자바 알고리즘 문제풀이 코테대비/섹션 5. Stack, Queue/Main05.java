@@ -1,7 +1,7 @@
-```java
+/* 5.5. 쇠막대기 */
 import java.util.*;
 
-public class Main {
+public class Main05 {
     public int solution(String str) {
         int answer = 0;
         Stack<Character> stack = new Stack<>();
@@ -37,4 +37,3 @@ public class Main {
         System.out.println(T.solution(str));
     }
 }
-```

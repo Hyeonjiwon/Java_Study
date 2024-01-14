@@ -1,4 +1,4 @@
-```java
+/* 5.8. 응급실 */
 import java.util.*;
 
 class Person {
@@ -11,7 +11,7 @@ class Person {
     }
 }
 
-public class Main {
+public class Main08 {
     public int solution(int n, int m, int[] arr) {
         int answer = 0;
         Queue<Person> queue = new LinkedList<>();
@@ -58,4 +58,3 @@ public class Main {
         System.out.println(T.solution(n, m, arr));
     }
 }
-```

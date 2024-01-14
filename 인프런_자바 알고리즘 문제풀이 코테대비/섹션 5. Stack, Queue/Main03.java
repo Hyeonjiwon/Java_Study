@@ -1,7 +1,7 @@
-```java
+/* 5.3. 크레인 인형뽑기(카카오) */
 import java.util.*;
 
-public class Main {
+public class Main03 {
     public int solution(int n, int[][] board, int m, int[] moves) {
         int answer = 0;
         Stack<Integer> stack = new Stack<>();
@@ -50,4 +50,3 @@ public class Main {
         System.out.println(T.solution(n, board, m, moves));
     }
 }
-```

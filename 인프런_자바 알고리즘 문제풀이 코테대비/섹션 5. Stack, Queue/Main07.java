@@ -1,7 +1,7 @@
-```java
+/* 5.7. 교육과정 설계 */
 import java.util.*;
 
-public class Main {
+public class Main07 {
     public String solution(String need, String plan) {
         String answer = "YES";
         Queue<Character> queue = new LinkedList<>();
@@ -35,4 +35,3 @@ public class Main {
         System.out.println(T.solution(a, b));
     }
 }
-```

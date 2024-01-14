@@ -1,7 +1,7 @@
-```java
+/* 5.6. 공주구하기 */
 import java.util.*;
 
-public class Main {
+public class Main06 {
     public int solution(int n, int k) {
         int answer = 0;
         Queue<Integer> queue = new LinkedList<>();
@@ -31,4 +31,3 @@ public class Main {
         System.out.println(T.solution(n, k));
     }
 }
-```

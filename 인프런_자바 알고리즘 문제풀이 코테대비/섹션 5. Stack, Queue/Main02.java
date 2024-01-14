@@ -1,7 +1,7 @@
-```java
+/* 5.2. 괄호문자제거 */
 import java.util.*;
 
-public class Main {
+public class Main02 {
     public String solution(String str) {
         String answer = "";
         Stack<Character> stack = new Stack<>();
@@ -29,4 +29,3 @@ public class Main {
         System.out.println(T.solution(str));
     }
 }
-```
