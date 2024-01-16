@@ -31,7 +31,7 @@ public class Main03 {
     }
 
     public static void main(String[] args) throws Exception {
-        Main T = new Main();
+        Main03 T = new Main03();
         Scanner kb = new Scanner(System.in);
 
         int n = kb.nextInt();

@@ -29,7 +29,7 @@ public class Main05 {
     }
 
     public static void main(String[] args) throws Exception {
-        Main T = new Main();
+        Main05 T = new Main05();
         Scanner kb = new Scanner(System.in);
 
         String str = kb.next();

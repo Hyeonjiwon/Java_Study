@@ -42,7 +42,7 @@ public class Main04 {
     }
 
     public static void main(String[] args) throws Exception {
-        Main T = new Main();
+        Main04 T = new Main04();
         Scanner kb = new Scanner(System.in);
 
         String str = kb.next();

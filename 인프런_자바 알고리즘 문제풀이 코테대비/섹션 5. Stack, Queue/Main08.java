@@ -45,7 +45,7 @@ public class Main08 {
     }
 
     public static void main(String[] args) throws Exception {
-        Main T = new Main();
+        Main08 T = new Main08();
         Scanner kb = new Scanner(System.in);
 
         int n = kb.nextInt();

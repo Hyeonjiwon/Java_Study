@@ -26,7 +26,7 @@ public class Main07 {
     }
 
     public static void main(String[] args) throws Exception {
-        Main T = new Main();
+        Main07 T = new Main07();
         Scanner kb = new Scanner(System.in);
 
         String a = kb.next();
